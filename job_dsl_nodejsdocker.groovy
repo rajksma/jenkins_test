@@ -1,7 +1,7 @@
 
 job('RKS NodeJS Docker example') {
     scm {
-        git('git://github.com/rajksma/jenkins_test/job_dsl_nodejsdocker.groovy /docker-demo.git') {  node -> // is hudson.plugins.git.GitSCM
+        git('git://github.com/rajksma/jenkins_test.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
             node / gitConfigEmail('jenkins-dsl@newtech.academy')
         }
